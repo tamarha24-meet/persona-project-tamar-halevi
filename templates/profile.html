@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="profile.css">
+    <title>Profile</title>
+</head>
+
+
+
+<body>
+    <h1> your reviews: </h1>
+	
+    {% for review in reviews %}
+
+        <div>
+        <h2> {{reviews[review]["title"]}} </h2>
+        <h3> by: {{reviews[review]["artist"]}} </h3>
+        <h4> {{reviews[review]["ranking"]}} </h4>
+        <p> {{reviews[review]["review_text"]}} </p>
+        
+        
+
+
+        <div>
+
+    {% endfor %}
+
+</body>
+
+
+
+</html>

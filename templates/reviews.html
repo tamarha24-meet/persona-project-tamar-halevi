@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/static/reviews.css">
+    <title>All reviews</title>
+</head>
+
+
+
+<body>
+
+
+    <div class="container">
+
+           <div class="navbar">
+                    
+                    
+                   <p class = "nav_item" > </p>
+                    <a href="/profile" class = "nav_item">Profile</a>
+                    <a href="/login" class = "nav_item">Login</a>
+                    <a href="/" class = "nav_item">Home</a>
+                     <a href="/reviews" class = "nav_item">Reviews</a>
+                     <a href="/add_review" class = "nav_item"> Add a Review</a>
+                    <a href="/logout"  id = "logout" >Logout</a>
+            </div>
+
+
+          <div class="title">
+              <h2 class = "dsc"> here are all the reviews posted: </h2>
+              <a href="/add_review" class = "add"><p> write a new review</p></a>
+          </div>
+
+          
+          <div class="reviews" style = "margin-left:25px; margin-right:25px">
+                {% for review in reviews %}
+
+                    <div class = "review_box" style = "float:left; margin-left:20px; margin-top:50px">
+                    <div class = "image_box"> </div>
+                    <h2 class = "title_review"> {{reviews[review]["title"]}} </h2>
+                    <h3 class = "artist"> by: {{reviews[review]["artist"]}} </h3>
+                    <h4 class = "ranking"> {{reviews[review]["ranking"]}} /10 </h4>
+                    <p class = "review_text"> {{reviews[review]["review_text"]}} </p>
+                    <p class = "posted"> posted by: {{reviews[review]["username"]}} </p>
+
+
+                    </div>
+
+                {% endfor %}
+          </div>
+        
+
+</div>
+	
+
+
+    
+
+</body>
+
+
+
+</html>

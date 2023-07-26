@@ -1,0 +1,148 @@
+@import url(//db.onlinewebfonts.com/c/72bc3c6b00e72d272eb79ee0d69ce103?family=New+Spirit);
+
+@font-face {font-family: "New Spirit"; src: url("//db.onlinewebfonts.com/t/72bc3c6b00e72d272eb79ee0d69ce103.eot"); src: url("//db.onlinewebfonts.com/t/72bc3c6b00e72d272eb79ee0d69ce103.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/72bc3c6b00e72d272eb79ee0d69ce103.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/72bc3c6b00e72d272eb79ee0d69ce103.woff") format("woff"), url("//db.onlinewebfonts.com/t/72bc3c6b00e72d272eb79ee0d69ce103.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/72bc3c6b00e72d272eb79ee0d69ce103.svg#New Spirit") format("svg"); }
+
+@import url(//db.onlinewebfonts.com/c/23255fa3ff7a89589800cea3092f154f?family=NB+International);
+
+@font-face {font-family: "NB International"; src: url("//db.onlinewebfonts.com/t/23255fa3ff7a89589800cea3092f154f.eot"); src: url("//db.onlinewebfonts.com/t/23255fa3ff7a89589800cea3092f154f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/23255fa3ff7a89589800cea3092f154f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/23255fa3ff7a89589800cea3092f154f.woff") format("woff"), url("//db.onlinewebfonts.com/t/23255fa3ff7a89589800cea3092f154f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/23255fa3ff7a89589800cea3092f154f.svg#NB International") format("svg"); }
+
+
+
+
+
+body {
+  height: 800px;
+  width: 1000px;
+  scroll-behavior: smooth;
+  background-color: #fff000;
+  background-image: linear-gradient(315deg, #fff000 0%, #ed008c 74%);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-image: linear-gradient(60deg, #4B382A, #997950, #F0E5D2); */
+}
+
+
+.container {  display: grid;
+  grid-template-columns: 120px 1560px 120px;
+  grid-template-rows: 30px 760px 10px;
+  gap: 60px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "navbar_place navbar_place navbar_place"
+    ". main ."
+    ". about .";
+}
+
+.navbar_place { 
+  grid-area: navbar_place; 
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; 
+}
+
+.main {
+  display: grid; 
+  grid-template-columns: 54.3% 45.7%; 
+  grid-template-rows: 100%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "content image"; 
+  grid-area: main; 
+  background-color: white;
+  border-radius: 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.content { 
+  grid-area: content; 
+  margin-top: 100px;
+  margin-right: 30px;
+  margin-left: 100px;
+}
+
+.image { 
+  grid-area: image; 
+}
+
+.about { 
+  grid-area: about; 
+  background-color: yellow;
+}
+
+h1 {
+  font-family: New Spirit;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-style: normal;
+  font-size: 100px;
+  color: #000000;
+  line-height: 90px;
+} 
+
+h2 {
+  font-family: NB International;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-style: normal;
+  font-size: 40px;
+  color: #000000;
+  line-height: 35px;
+} 
+
+.button1 {
+  background-color: #aabdbb;
+  border-radius: 32px;
+  border: none;
+  color: #000000;
+  padding: 7px 60px;
+  font-family: New Spirit;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+  background-color: #D8D8D8; 
+}
+
+.nav_item {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-weight: 50px;
+  font-stretch: 30%;
+  font-style: bold;
+  font-size: 25px;
+  color: white;
+  line-height: 50px;
+  /* text-align: right; */
+  float: right;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 25px;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#logout {
+  font-family: NB International;
+  font-weight: 50px;
+  font-stretch: 30%;
+  font-style: bold;
+  font-size: 25px;
+  color: darkred;
+  line-height: 50px;
+  /* text-align: right; */
+  float: left;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 25px;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image{
+  margin-top: 90px;
+}

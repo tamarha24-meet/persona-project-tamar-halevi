@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/static/signup.css">
+    <title>Signup</title>
+</head>
+
+
+
+<body>
+    <div class="center">
+         <input type="checkbox" id="show">
+         <label for="show" class="show-btn">View Form</label>
+         <div class="container">
+            <label for="show" class="close-btn fas fa-times" title="close"></label>
+            <div class="text">
+               Signup
+            </div>
+            <form method="POST" action="/signup">
+               <div class="data">
+                  <label>Email</label>
+                  <input type="email" name="email" placeholder="Email" id="emailStr" required>
+               </div>
+               <div class="data">
+                  <label>Password</label>
+                  <input type="password" name="password" placeholder="Password" minlength = "6" required>
+               </div>
+               <div class="data">
+                  <label>Username</label>
+                  <input type="text" name="username" placeholder="Username" maxlength = "20" required>
+               </div>
+               <div class="data">
+                  <label>Bio</label>
+                  <input type="text" name="bio" placeholder="Bio" maxlength = "200" required>
+               </div>
+
+
+               <div> </div>
+               <div class="btn">
+                  <div class="inner"></div>
+                  <button type="submit">signup</button>
+               </div>
+            </form>
+         </div>
+      </div>
+
+
+
+</body>
+
+
+
+</html>

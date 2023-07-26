@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/static/add_review.css">
+    <title>Add review</title>
+</head>
+
+
+
+<body>
+
+        <div class="center">
+         <input type="checkbox" id="show">
+         <label for="show" class="show-btn">View Form</label>
+         <div class="container">
+            <label for="show" class="close-btn fas fa-times" title="close"></label>
+            <div class="text">
+               Add a new review
+            </div>
+            <form method="POST" action="/add_review">
+               <div class="data">
+                  <label>Album title</label>
+                  <input type="text"  name="title" placeholder="Album title" required>
+               </div>
+               <div class="data">
+                  <label>Artist</label>
+                  <input type="text"  name="artist" placeholder="Artist" required>
+               </div>
+               <div class="data">
+                  <label>Ranking</label>
+                  <input type="number" name="ranking" placeholder="Username" min = "0" max = "10" required>
+               </div>
+               <div class="data">
+                  <label>Write your review</label>
+                  <input type="text"  name="review_text" placeholder="Review" maxlength = "500" required>
+               </div>
+
+
+               <div> </div>
+               <div class="btn">
+                  <div class="inner"></div>
+                  <button type="submit">Post your review</button>
+               </div>
+            </form>
+         </div>
+      </div>
+
+
+</body>
+
+
+
+</html>
