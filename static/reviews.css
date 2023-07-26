@@ -15,7 +15,7 @@ body {
 
 .container {  display: grid;
   grid-template-columns: 2% 96% 2%;
-  grid-template-rows: 5% 10% 85%;
+  grid-template-rows: 5% 15% 80%;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -39,10 +39,10 @@ body {
 
 .nav_item {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  font-weight: 60;
+  font-weight: 50px;
   font-stretch: 100%;
   font-style: normal;
-  font-size: 25px;
+  font-size: 18px;
   color: white;
   line-height: 50px;
   /* text-align: right; */
@@ -51,15 +51,31 @@ body {
   margin-left: 20px;
 }
 
-#logout {
+.dsc {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  font-weight: 60;
+  font-weight: 50px;
   font-stretch: 100%;
   font-style: normal;
-  font-size: 25px;
+  font-size: 50px;
+  color: black;
+  line-height: 20px;
+  /* text-align: right; */
+  float: right;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+
+#logout {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-weight: 50px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-size: 18px;
   color: red;  
   line-height: 50px;
   text-align: left;
+  margin-left: 50px;
 }
 
 .review_box {
@@ -70,8 +86,20 @@ body {
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
+.title_box {
+  background: #fff;
+  width: 780px;
+  height: 100px;
+  padding: 30px;
+  margin-right: 500px;
+  margin-left: 500px;
+  border-radius: 10px; 
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  align-self: center;
+}
+
+
 .image_box{
-  background-color: blue;
   width: 300px;
   height: 300px;
   margin-top: 15px;
@@ -81,7 +109,7 @@ body {
 
 
 .title_review {
-    font-family: NB International;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   font-weight: 50px;
   font-stretch: 30%;
   font-style: bold;
@@ -93,22 +121,3 @@ body {
 }
 
 
-/* .container {
-  width: 480px; 
-  height: 140px; 
-  border: 1px solid green;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-
-.inner {
-  height: 100%;
-  white-space:nowrap; 
-}
-
-.floatLeft {
-  width: 200px;
-  height: 92px; 
-  margin:10px 10px 50px 10px; 
-  display: inline-block;
-}

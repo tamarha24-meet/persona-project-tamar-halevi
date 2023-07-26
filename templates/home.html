@@ -31,17 +31,19 @@
 
                 <div class="content">
                 {% if loged_in == True %}
-                    <h1> welcome back {{username}} ! </h1>
+                    <div class = "first"> <h1 class = "title"> welcome back {{username}} ! </h1> </div>
                 {% else %}
-                    <h1> welcome to my website! </h1>
+                    <div class = "first"> <h1 class = "title"> welcome to my website! </h1> </div>
                 {% endif %}
-                <h2> get ready to recommend, complain & share <h2>
+                <div class = "dsc"> <h2> get ready to recommend, complain & share <h2> </div>
                 <br>
-                <a href="/reviews"><button class = "button1"> watch the reviews </button></a>
+                <center>
+                <a href="/reviews"><button class = "btn-grad" style = "box-shadow:rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;"> watch the reviews </button></a>
+            </center>
                 </div>
 
                 <div class="image">
-                    <img src="https://static.vecteezy.com/system/resources/previews/008/485/555/original/3d-illustration-object-icon-music-retro-player-can-be-used-for-web-app-info-graphic-etc-png.png" alt="the unseen" width="550" height = "550">
+                   
                 </div>
 
           </div>

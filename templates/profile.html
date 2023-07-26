@@ -3,29 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="profile.css">
+	<link rel="stylesheet" href="/static/profile.css">
     <title>Profile</title>
 </head>
 
 
 
 <body>
-    <h1> your reviews: </h1>
-	
-    {% for review in reviews %}
 
-        <div>
-        <h2> {{reviews[review]["title"]}} </h2>
-        <h3> by: {{reviews[review]["artist"]}} </h3>
-        <h4> {{reviews[review]["ranking"]}} </h4>
-        <p> {{reviews[review]["review_text"]}} </p>
+        <div class="container">
+
+           <div class="navbar">
+                    
+                    
+                   <p class = "nav_item" > </p>
+                    <a href="/profile" class = "nav_item">Profile</a>
+                    <a href="/login" class = "nav_item">Login</a>
+                    <a href="/" class = "nav_item">Home</a>
+                     <a href="/reviews" class = "nav_item">Reviews</a>
+                     <a href="/add_review" class = "nav_item"> Add a Review</a>
+                    <a href="/logout"  id = "logout" >Logout</a>
+            </div>
+
+            <center>
+          <div class="title">
+            <div class = "title_box">
+              <h2 class = "dsc"> your reviews: </h2>
+            </div>
+          </div>
+        </center>
+
+          
+          <div class="reviews" style = "margin-left:25px; margin-right:25px">
+                {% for review in reviews %}
+
+                    <div class = "review_box" style = "float:left; margin-left:20px; margin-top:50px">
+
+                    <div class = "image_box"> <img src = "{{reviews[review]['cover']}}" width="300" height="300" > </div>
+                    <h2 class = "title_review"> {{reviews[review]["title"]}} </h2>
+                    <h3 class = "artist"> by: {{reviews[review]["artist"]}} </h3>
+                    <h4 class = "ranking"> {{reviews[review]["ranking"]}} /10 </h4>
+                    <p class = "review_text"> {{reviews[review]["review_text"]}} </p>
+                    <p class = "posted"> posted by: {{reviews[review]["username"]}} </p>
+
+
+                    </div>
+
+                {% endfor %}
+          </div>
         
-        
 
-
-        <div>
-
-    {% endfor %}
+</div>
+    
 
 </body>
 

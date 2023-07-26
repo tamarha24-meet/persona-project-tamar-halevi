@@ -32,10 +32,15 @@ def home():
 		username = ""
 		loged_in = False
 	else:
-		UID = login_session['user']['localId']
-		user = db.child("Users").child(UID).get().val()
-		username = user["username"]
-		loged_in = True
+		try:
+			UID = login_session['user']['localId']
+			user = db.child("Users").child(UID).get().val()
+			username = user["username"]
+			loged_in = True
+		except:
+			loged_in = False
+			username = ""
+			return render_template("home.html", loged_in = loged_in, username = username)
     
 	return render_template("home.html", loged_in = loged_in, username = username)
 
@@ -126,7 +131,7 @@ def add_review():
 				UID = login_session['user']['localId']
 				user = db.child("Users").child(UID).get().val()
 				username = user["username"]
-				review = {"username": username, "title": request.form['title'], "artist":request.form['artist'], "review_text": request.form['review_text'], "ranking": request.form['ranking']}
+				review = {"username": username, "title": request.form['title'], "artist":request.form['artist'], "review_text": request.form['review_text'], "ranking": request.form['ranking'], "cover": request.form['cover']}
 				db.child("Reviews").push(review)
 
 				db.child("Users").child(UID).child("reviews").push(review)

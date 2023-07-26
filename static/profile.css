@@ -1,0 +1,120 @@
+body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  background-color: #fff000;
+  background-image: linear-gradient(315deg, #FF5F6D 0%, #FFC371 74%);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {  display: grid;
+  grid-template-columns: 2% 96% 2%;
+  grid-template-rows: 5% 15% 80%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "navbar navbar navbar"
+    ". title ."
+    "reviews reviews reviews";
+}
+
+.navbar { 
+  grid-area: navbar; 
+}
+
+.title {
+ grid-area: title; 
+}
+
+.reviews { 
+  grid-area: reviews; 
+}
+
+
+.nav_item {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-weight: 50px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+  line-height: 50px;
+  /* text-align: right; */
+  float: right;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.dsc {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-weight: 50px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-size: 50px;
+  color: black;
+  line-height: 20px;
+  /* text-align: right; */
+  float: center;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+
+#logout {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-weight: 50px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-size: 18px;
+  color: red;  
+  line-height: 50px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.review_box {
+  background: #fff;
+  width: 350px;
+  padding: 30px;
+  border-radius: 10px; 
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.title_box {
+  background: #fff;
+  width: 780px;
+  height: 100px;
+  padding: 30px;
+  margin-right: 500px;
+  margin-left: 500px;
+  border-radius: 10px; 
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  align-self: center;
+}
+
+
+.image_box{
+  width: 300px;
+  height: 300px;
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+.title_review {
+  font-family: NB International;
+  font-weight: 50px;
+  font-stretch: 30%;
+  font-style: bold;
+  font-size: 25px;
+  color: black;
+  line-height: 50px;
+  /* text-align: right; */
+  float: center;
+}
+
+

@@ -45,7 +45,7 @@ body {
 
 .main {
   display: grid; 
-  grid-template-columns: 54.3% 45.7%; 
+  grid-template-columns: 99% 1%; 
   grid-template-rows: 100%; 
   gap: 0px 0px; 
   grid-template-areas: 
@@ -62,6 +62,7 @@ body {
   margin-top: 100px;
   margin-right: 30px;
   margin-left: 100px;
+  text-align: center;
 }
 
 .image { 
@@ -83,6 +84,14 @@ h1 {
   line-height: 90px;
 } 
 
+.dsc{
+  margin-top: 50px;
+}
+
+.first{
+  margin-top: 150px;
+  text-align: center;
+}
 h2 {
   font-family: NB International;
   font-weight: 300;
@@ -112,7 +121,7 @@ h2 {
 }
 
 .nav_item {
-  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-family: NB International;
   font-weight: 50px;
   font-stretch: 30%;
   font-style: bold;
@@ -125,6 +134,41 @@ h2 {
   margin-left: 30px;
   margin-top: 25px;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  font-family: NB International;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;    
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;        
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.title {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-weight: bold;
+  font-stretch: 100%;
+  font-style: normal;
+  font-size: 107px;
+  color: black;
+  line-height: 50px;
+  /* text-align: right; */
+  float: center;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 #logout {

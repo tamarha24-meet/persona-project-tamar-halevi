@@ -26,18 +26,21 @@
                     <a href="/logout"  id = "logout" >Logout</a>
             </div>
 
-
+            <center>
           <div class="title">
+            <div class = "title_box">
               <h2 class = "dsc"> here are all the reviews posted: </h2>
-              <a href="/add_review" class = "add"><p> write a new review</p></a>
+            </div>
           </div>
+        </center>
 
           
           <div class="reviews" style = "margin-left:25px; margin-right:25px">
                 {% for review in reviews %}
 
                     <div class = "review_box" style = "float:left; margin-left:20px; margin-top:50px">
-                    <div class = "image_box"> </div>
+
+                    <div class = "image_box"> <img src = "{{reviews[review]['cover']}}" width="300" height="300" > </div>
                     <h2 class = "title_review"> {{reviews[review]["title"]}} </h2>
                     <h3 class = "artist"> by: {{reviews[review]["artist"]}} </h3>
                     <h4 class = "ranking"> {{reviews[review]["ranking"]}} /10 </h4>
